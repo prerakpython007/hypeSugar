@@ -3,6 +3,7 @@ import Nav from "./_components/Nav";
 import Landing from "./_components/Landing";
 import About from "./_components/About";
 import Feedbacks from "./_components/Feedbacks";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Landing/>
       <About/>
       <Feedbacks/>
+      <Footer/>
     </div>
   );
 }
