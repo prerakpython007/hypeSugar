@@ -32,15 +32,7 @@ const About: FC = () => {
 
         {/* Boost Your Presence Section - Horizontal Layout */}
         <div className="flex items-center justify-center gap-8">
-          <h2 className="text-3xl font-bold  text-black whitespace-nowrap">Boost Your <br /> Presence</h2> <Image 
-  height={10} 
-  width={300} 
-  src={process.env.NODE_ENV === 'production' 
-    ? `${process.env.NEXT_PUBLIC_BASE_URL}/line.png` 
-    : '/line.png'
-  } 
-  alt=".." 
-/>
+          <h2 className="text-3xl font-bold  text-black whitespace-nowrap">Boost Your <br /> Presence</h2> <Image height={10} width={300} src="/line.png" alt=".." />
           <p className="text-[#00000066]">
             Increase your influence with enhanced engagement.
           </p>
