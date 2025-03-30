@@ -2,6 +2,7 @@
 
 import { FC } from 'react'
 import { Sora } from 'next/font/google'
+import Image from 'next/image';
 
 
 const sora = Sora({ 
@@ -31,7 +32,7 @@ const About: FC = () => {
 
         {/* Boost Your Presence Section - Horizontal Layout */}
         <div className="flex items-center justify-center gap-8">
-          <h2 className="text-3xl font-bold  text-black whitespace-nowrap">Boost Your <br /> Presence</h2> <img src="/line.png" alt="" />
+          <h2 className="text-3xl font-bold  text-black whitespace-nowrap">Boost Your <br /> Presence</h2> <Image height={10} width={10} src="/line.png" alt="" />
           <p className="text-[#00000066]">
             Increase your influence with enhanced engagement.
           </p>

@@ -14,7 +14,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 const Landing: FC = () => {
   return (
     <div className={` flex  flex-col items-center bg-white justify-center ${sora.className}`}>
-        <Image src="/cloud.png" className='relative left-[614px] top-[50px] w-[11%]' alt="" height={50} width={50} />
+        <Image src="/cloud.png" className='relative left-[674px] top-[50px] w-[11%]' alt="" height={50} width={50} />
       <h1 className="text-6xl font-bold text-center text-black tracking-tight">
       Unlock Your Potential with <br /> Our Expertise
       </h1>
