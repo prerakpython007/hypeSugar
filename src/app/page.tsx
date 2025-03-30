@@ -2,6 +2,7 @@ import Image from "next/image";
 import Nav from "./_components/Nav";
 import Landing from "./_components/Landing";
 import About from "./_components/About";
+import Feedbacks from "./_components/Feedbacks";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Nav/>
       <Landing/>
       <About/>
+      <Feedbacks/>
     </div>
   );
 }
