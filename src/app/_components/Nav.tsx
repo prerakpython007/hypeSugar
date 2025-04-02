@@ -37,11 +37,17 @@ const Nav: FC = () => {
           {/* Hamburger Button */}
           <button 
             onClick={() => setIsOpen(!isOpen)} 
-            className="lg:hidden z-50 p-2 flex flex-col justify-center items-center h-16"
+            className="lg:hidden z-50 p-2 flex flex-col justify-center items-center w-12 h-12 relative"
           >
-            <div className="w-6 h-0.5 bg-black mb-1.5 rounded-full"/>
-            <div className="w-6 h-0.5 bg-black mb-1.5 rounded-full"/>
-            <div className="w-6 h-0.5 bg-black rounded-full"/>
+            <div className={`absolute w-6 h-0.5 bg-black rounded-full transition-all duration-300 ${
+              isOpen ? 'transform rotate-45 translate-y-0' : 'translate-y-[-6px]'
+            }`}/>
+            <div className={`absolute w-6 h-0.5 bg-black rounded-full transition-all duration-300 ${
+              isOpen ? 'opacity-0' : 'opacity-100'
+            }`}/>
+            <div className={`absolute w-6 h-0.5 bg-black rounded-full transition-all duration-300 ${
+              isOpen ? 'transform -rotate-45 translate-y-0' : 'translate-y-[6px]'
+            }`}/>
           </button>
 
           {/* Mobile Menu */}
@@ -51,7 +57,7 @@ const Nav: FC = () => {
             ${isOpen ? 'translate-x-0' : 'translate-x-full'}
           `}>
             <div className="flex flex-col items-center justify-center h-full">
-              <div className="space-y-12 text-center">
+              <div className="space-y-10 text-center">
                 <Link href="/" className="block text-xl font-medium text-black hover:text-gray-600">
                   About
                 </Link>
@@ -64,7 +70,7 @@ const Nav: FC = () => {
                 <Link href="/contact" className="block text-xl font-medium text-black hover:text-gray-600">
                   Contact Us
                 </Link>
-                <button className='cartoon-button font-bold text-black px-8 py-3 mt-8'>
+                <button className='cartoon-button relative right-7 font-bold text-black px-8 py-3 mt-1'>
                   Request a demo
                 </button>
               </div>
@@ -77,7 +83,7 @@ const Nav: FC = () => {
             <Link href="/about" className="">Services</Link>
             <Link href="/services" className="">Testimonials</Link>
             <Link href="/contact" className="">Contact Us</Link>
-            <button className='cartoon-button font-bold text-black'>
+            <button className='cartoon-button  font-bold text-black'>
               Request a demo
             </button>
           </div>

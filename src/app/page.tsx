@@ -7,7 +7,7 @@ import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-white ">
+    <div className="bg-white w-[100%] ">
       <div className="w-full bg-[#feeb34]  h-[52px]" ></div>
       <Nav/>
       <Landing/>

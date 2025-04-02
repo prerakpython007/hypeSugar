@@ -18,7 +18,7 @@ const Footer: FC = () => {
         <Image src='/star-black.png' className='relative left-[1232px] top-[14px] hidden md:block' height={50} width={50} alt='star black' />
         <Image src='/star-white.png' className='absolute left-[250px] mt-[-50px] hidden md:block' width={100} height={100} alt='star white' />
         <Image src='/cloud.png' width={200} height={200} className='relative top-[-60px] left-[1232px] hidden lg:block' alt='cloud'/>
-        <Image src='/footer-cloud-2.png' alt='logo' className='relative left-10 top-[137px] hidden lg:block' height={200} width={200}/>
+        <Image src='/footer-cloud-2.png' alt='logo' className='relative left-10 top-[144px] hidden lg:block' height={200} width={200}/>
         
         <div className="text-center w-full lg:w-[80%] m-auto mt-0 lg:mt-[-160px] mb-2">
           <h2 className="text-3xl lg:text-5xl font-bold text-black">
