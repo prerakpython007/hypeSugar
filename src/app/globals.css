@@ -4,6 +4,10 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -50,4 +54,44 @@ margin-left: 40px;
 -webkit-box-shadow: 10px 10px 5px #222;
 box-shadow: 6px 7px 1px black;
 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-160%);
+  }
+
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-scroll-2 {
+  animation: scroll2 30s linear infinite;
+}
+
+.animate-slide-left {
+  animation: slideLeft 20s linear infinite;
 }

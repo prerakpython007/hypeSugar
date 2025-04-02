@@ -79,10 +79,10 @@ const Nav: FC = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center justify-center flex-1 text-[#9f9e9e] space-x-15">
-            <Link href="/" className="">About</Link>
-            <Link href="/about" className="">Services</Link>
-            <Link href="/services" className="">Testimonials</Link>
-            <Link href="/contact" className="">Contact Us</Link>
+            <Link href="#about" className="">About</Link>
+            <Link href="#services" className="">Services</Link>
+            <Link href="#feedbacks" className="">Testimonials</Link>
+            <Link href="#footer" className="">Contact Us</Link>
             <button className='cartoon-button  font-bold text-black'>
               Request a demo
             </button>

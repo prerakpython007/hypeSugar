@@ -12,7 +12,7 @@ const sora = Sora({
 
 const About: FC = () => {
   return (
-    <div className={`w-full py-20 bg-white flex  justify-center ${sora.className}`}>
+    <div className={`w-full py-20 bg-white flex  justify-center ${sora.className}`} id='about'>
       <div className="w-[70%] space-y-28">
         {/* About HypeSugar Section */}
         <div className="mb-44 space-y-3 text-center">
@@ -23,7 +23,7 @@ const About: FC = () => {
         </div>
 
         {/* Our Services Section */}
-        <div className="mb-44 space-y-3 text-center">
+        <div className="mb-44 space-y-3 text-center" id='services'>
           <h2 className="text-3xl  text-black font-bold">Our Services</h2>
           <p className="text-[#00000066]">
             Manage, allocate & reduce cloud spend across all cloud providers and services by <br /> using Zaspert's enterprise-grade FinOps solution

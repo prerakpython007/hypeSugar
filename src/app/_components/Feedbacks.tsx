@@ -11,7 +11,7 @@ const sora = Sora({
 
 const Feedbacks: FC = () => {
   return (
-    <div className={`w-full py-10 md:py-20 ${sora.className}`}>
+    <div className={`w-full bg-white py-10 md:py-20 ${sora.className}`} id='feedbacks'>
       <div className="w-[95%] mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-center text-black mb-6 md:mb-12">What Others Said About Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -43,7 +43,7 @@ const Feedbacks: FC = () => {
                 <div className='p-2 '>
               <img src="/avatar.avif" alt="Client" className="w-10 h-10 md:w-12 md:h-12 rounded-full" />
               </div>
-              <div className='py-2 md:py-6'>
+              <div className='py-2 '>
                 <h3 className="font-bold text-xs md:text-sm text-black">Mike Thompson</h3>
                 <p className="text-xs text-black">DevOps Manager, ScaleUp</p>
                 </div>

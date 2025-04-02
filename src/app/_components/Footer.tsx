@@ -13,7 +13,7 @@ const sora = Sora({
 
 const Footer: FC = () => {
   return (
-    <footer className={`w-full py-8 lg:py-20 ${sora.className}`}>
+    <footer className={`w-full py-8 bg-white mb-6 lg:rounded-b-[100px] rounded-b-4xl lg:py-20 ${sora.className}`} >
       <div className="rounded-b-4xl">
         <Image
           src="/people.png"
@@ -23,7 +23,7 @@ const Footer: FC = () => {
           width={578}
         />
 
-        <div className="w-[95%] rounded-4xl mx-auto bg-[#feeb34] border-2 border-black rounded-[30px] lg:rounded-[50px] p-4 lg:p-12">
+        <div className="w-[95%] mx-auto bg-[#feeb34] border-2 border-black rounded-[30px] lg:rounded-[50px] p-4 lg:p-12">
           <Image
             src="/star-black.png"
             className="relative left-[1232px] top-[14px] hidden md:block"
@@ -53,7 +53,7 @@ const Footer: FC = () => {
             width={200}
           />
 
-          <div className="text-center w-full lg:w-[80%] m-auto mt-0 lg:mt-[-160px] mb-2">
+          <div className="text-center w-full lg:w-[80%] m-auto mt-0 lg:mt-[-160px] mb-2" id="footer">
             <h2 className="text-3xl lg:text-5xl font-bold text-black">
               Start Your Cost Reduction Trial Now!
             </h2>
@@ -102,10 +102,10 @@ const Footer: FC = () => {
               </p>
             </div>
             <div className="flex space-x-3 mt-5">
-              <button className="border-2 border-black p-3.5 rounded-full">
+              <button className="border-2 border-black p-4 rounded-full">
                 <img src="/linkedin.png" alt="" className="w-5 h-5" />
               </button>
-              <button className="border-2 border-black p-3 rounded-full">
+              <button className="border-2 border-black p-4 rounded-full">
                 <img src="/facebook.png" alt="" className="w-5 h-5" />
               </button>
               <button className="border-2 border-black p-4 rounded-full">
@@ -114,7 +114,7 @@ const Footer: FC = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-6 gap-x-4 w-full lg:w-[70%] py-8 mt-7">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:space-x-9 lg:justify-end lg:mt-14 gap-y-6  w-full lg:w-[70%] py-8 mt-7">
             <div>
               <Link href="/terms" className="text-[#00000099] text-sm">Solution</Link>
             </div>
@@ -137,6 +137,7 @@ const Footer: FC = () => {
         </div>
       </div>
     </footer>
+
   );
 };
 
