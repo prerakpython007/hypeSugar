@@ -30,10 +30,17 @@ const About: FC = () => {
           </p>
         </div>
 
-        {/* Boost Your Presence Section - Horizontal Layout */}
-        <div className="flex items-center  justify-center gap-8">
-          <h2 className="text-3xl font-bold  text-black whitespace-nowrap">Boost Your <br /> Presence</h2> <Image height={10} width={300} src="/line.png" alt=".." />
-          <p className="text-[#00000066]">
+        {/* Boost Your Presence Section - Vertical on mobile, Horizontal on desktop */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+          <h2 className="text-3xl font-bold text-black text-center md:text-left">Boost Your <br /> Presence</h2>
+          <Image 
+            height={10} 
+            width={300} 
+            src="/line.png" 
+            alt=".." 
+            className="rotate-90 md:rotate-0 h-32 md:h-auto w-[2px] md:w-auto my-4 md:my-0"
+          />
+          <p className="text-[#00000066] text-center md:text-left">
             Increase your influence with enhanced engagement.
           </p>
         </div>
