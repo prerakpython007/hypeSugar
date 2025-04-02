@@ -12,7 +12,7 @@ const sora = Sora({
 
 const About: FC = () => {
   return (
-    <div className={`w-full py-20 flex  justify-center ${sora.className}`}>
+    <div className={`w-full py-20 bg-white flex  justify-center ${sora.className}`}>
       <div className="w-[70%] space-y-28">
         {/* About HypeSugar Section */}
         <div className="mb-44 space-y-3 text-center">
